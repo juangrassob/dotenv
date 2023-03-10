@@ -2,14 +2,14 @@ vim.g.mapleader = " "
 vim.keymap.set("n", "<leader>fe", function() vim.cmd("Ex") end)
 
 -- Move highligted text with J and K
-vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
-vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
+vim.keymap.set("v", "J", ":m '>+2<CR>gv=gv")
+vim.keymap.set("v", "K", ":m '<-1<CR>gv=gv")
 
 -- Make the cursor stay in the middle of the screen wile searching
 vim.keymap.set("n", "n", "nzzzv")
 vim.keymap.set("n", "N", "Nzzzv")
 
--- Dont loose the current buffer wile using p
+-- Don't loose the current buffer wile using p
 vim.keymap.set("x", "p", [["_dP]])
 -- Select all
 vim.keymap.set("n", "<C-a>", "gg<S-v>G")

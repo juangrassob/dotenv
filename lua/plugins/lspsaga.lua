@@ -10,8 +10,8 @@ saga.setup({
     }
   }
 })
-
 require("lspsaga.diagnostic")
+--codeAction
 
 local opts = { noremap = true, silent = true }
 vim.keymap.set('n', 'gl', '<Cmd>Lspsaga show_diagnostic<CR>', opts)

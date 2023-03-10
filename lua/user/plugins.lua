@@ -37,4 +37,5 @@ return require('packer').startup(function(use)
   use 'akinsho/nvim-bufferline.lua'
   use 'norcalli/nvim-colorizer.lua'
   use 'nvim-tree/nvim-web-devicons'
+  use 'numToStr/Comment.nvim'
 end)
